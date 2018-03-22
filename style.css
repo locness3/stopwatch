@@ -1,0 +1,43 @@
+body {
+  font-family: "Cabin";
+}
+
+p {
+  text-align: center;
+}
+
+#stop-button {
+  float: right;
+}
+
+#start-button {
+  float: left;
+}
+
+#reset-button {
+  margin: 0 auto;
+}
+
+#reset-button:active {
+  margin: 2px auto 0;
+}
+
+#seconds {
+  font-size: 100px;
+  text-shadow: 5px 5px #c8cbd1;
+}
+
+.button {
+  color: #222323;
+  background-color: #32db9d;
+  border: none;
+  width: 100px;
+  box-shadow: 0px 5px #c8cbd1;
+  display: block;
+}
+
+.button:active {
+  margin-top: 2px;
+  box-shadow: 0px 3px #c8cbd1;
+  background-color: #5f6063;
+}

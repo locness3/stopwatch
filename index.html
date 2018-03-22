@@ -5,31 +5,7 @@
     <meta charset="utf-8">
     <title>Chronomètre</title>
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <style>
-      body {
-  font-family: "Cabin";
-}
-
-p {
-  text-align: center;
-}
-
-#stop-button {
-  float: right;
-}
-
-#start-button {
-  float: left;
-}
-
-#reset-button {
-  margin: 0 auto;
-}
-
-#reset-button:active {
-  margin: 2px auto 0;
-}
-    </style>
+    
   </head>
 
   <body>
@@ -44,31 +20,7 @@ p {
       <strong>WARNING: Don't click Start multiple times</strong><br><br> v1.5 (Styling and Reset)<br> Made with ♡ by <a href="https://scratch.mit.edu/users/Locness" target="_blank">Locness</a><br><br> Original from a Khan Academy programming challenge
 
     </p>
-    <script>
-      var seconds = document.getElementById("seconds");
-    var lol;
-    var countUp = function() {
-       var time = parseFloat(seconds.textContent);
-       seconds.textContent = time + 1;
-};
-
-       var startCountUp = function() {
-       interval = window.setInterval(countUp, 1000);
-
-}
-
-       var stopCountUp = function() {
-       window.clearInterval(interval);
-};
-
-       var reset = function() {
-       window.clearInterval(interval);
-       seconds.textContent = 0;
-}
-      var stopButton = document.getElementById("stop-button");
-      stopButton.addEventListener("click", stopCountUp);
-      var startButton = document.getElementById("start-button");
-    </script>
+    
   </body>
 
 </html>
